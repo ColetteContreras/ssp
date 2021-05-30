@@ -22,4 +22,19 @@ protocol:bittorrent
 regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
 
 # 外汇
-regexp:(.*.||)(metatrader4|metatrader5|mql5).(org|com|net)
+regexp:(.*.||)(metatrader4|metatrader5|mql5|gash|mycard).(org|com|net)
+
+# 金融诈骗
+regexp:.*bank.*
+
+# 屏蔽Spam邮箱
+regexp:(^.*\@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168)\.(info|biz|com|de|net|org|me|la)
+
+# 禁止邮件滥发
+regexp:(Subject|HELO|SMTP)
+
+# 禁止360
+regexp:(.+\.|^)(360|so)\.(cn|com)
+
+# 禁止定位
+regexp:(api|ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map|)\.(baidu|n\.shifen)\.com
